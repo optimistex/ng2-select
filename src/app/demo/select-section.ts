@@ -31,6 +31,11 @@ const tabDesc = {
         ts: require('!!raw-loader!./select/no-autocomplete-demo.ts'),
         html: require('!!raw-loader!./select/no-autocomplete-demo.html'),
     },
+    customEntries: {
+        heading: 'Custom entries',
+        ts: require('!!raw-loader!./select/custom-entries-demo.ts'),
+        html: require('!!raw-loader!./select/custom-entries-demo.html'),
+    },
 };
 
 @Component({
@@ -64,6 +69,11 @@ const tabDesc = {
                 <tab heading="No autocomplete">
                     <sample-section [desc]="tabDesc.noAutoComplete">
                         <no-autocomplete-demo></no-autocomplete-demo>
+                    </sample-section>
+                </tab>
+                <tab heading="Custom entries">
+                    <sample-section [desc]="tabDesc.customEntries">
+                        <custom-entries-demo></custom-entries-demo>
                     </sample-section>
                 </tab>
             </tabset>

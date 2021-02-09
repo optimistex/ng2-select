@@ -14,6 +14,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { CustomEntriesDemoComponent } from './demo/select/custom-entries-demo';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { ButtonsModule } from 'ngx-bootstrap/buttons';
         NoAutoCompleteDemoComponent,
         RichDemoComponent,
         SingleDemoComponent,
+        CustomEntriesDemoComponent,
     ],
     imports: [
         BrowserModule,
